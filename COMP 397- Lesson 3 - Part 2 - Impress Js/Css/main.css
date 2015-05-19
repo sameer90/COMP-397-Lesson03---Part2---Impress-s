@@ -1,26 +1,29 @@
 ﻿body {
     background: #d0e4f7; /* Old browsers */
-    background: -moz-linear-gradient(top,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6+ */
+    background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0e4f7), color-stop(24%,#73b1e7), color-stop(50%,#0a77d5), color-stop(79%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C */
+    background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
 }
-.impress-enabled .step{
+
+.impress-enabled .step {
     margin: 0;
     opacity: 0.0;
     -webkit-transition: 1s;
-    -moz-transition:  1s;
-    -ms-transition:  1s;
-    -o-transition:  1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
-.impress-enabled .step.active{
-    opacity: 1;
-}
-.slide{
+
+    .impress-enabled .step.active {
+        opacity: 1;
+    }
+
+.slide {
     display: block;
     width: 700px;
     height: 600px;
@@ -30,5 +33,34 @@
     color: rgb(52,52,52);
     text-shadow: 0 2px 2px rgba(0,0,0,.1);
     border-radius: 5px;
-    font-family: "Open Sans", Arial, sans-serif; /* We can use our own fonts from web fonts */      
+    font-family: "Open Sans", Arial, sans-serif; /* We can use our own fonts from web fonts */
+}
+    /*styling for slide paragraphs*/
+    .slide p {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        line-height: 45px;
+    }
+    /*styling for slide Links*/
+    .slide a, .slide a:visited {
+        color: #071529;
+        text-decoration: none;
+        background-color: #abc;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #cde;
+    }
+
+        .slide a:hover, .slide a:active {
+            background-color: #cde;
+        }
+    /*styling for slide Text Area*/
+    .slide .slide-text {
+        height: 450px;
+    }
+/*styling for Div menu*/
+div.menu {
+    border-top: 2px solid black;
+    padding-top: 25px;
+    text-align: center;
 }
